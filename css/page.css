@@ -5,6 +5,7 @@
     "notas promedio" ;
     grid-gap: 20px;
     width: 100%;
+    margin: auto;
     height: 100vh;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 60px calc(100vh - 60px);

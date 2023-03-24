@@ -10,8 +10,8 @@
     <section class="page-content">
         <h1 class="titulo">Notas</h1>
         <article class="notas-content">
-            <button >Crear</button>
-            <table>
+            <button id="crearBtn" >Crear</button>
+            <table id="promedioTb">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -26,7 +26,7 @@
                      <td>Entrega1</td>
                      <td>5</td>
                      <td>
-                        <button>Modificar</button>
+                        <button onclick="modificarActividad">Modificar</button>
                         <button>Eliminar</button>
                      </td>
                      </tr>
@@ -34,29 +34,30 @@
             </table>
         </article>
         <article class="promedio-content">
-            <p>Su promedio es: 5</p>
+            <p id="promedioText">Su promedio es: 5</p>
             <br>
-            <h2>Aprobó la materia</h2>
+            <h2 id="calificacion">Aprobó la materia</h2>
         </article>
     </section>
-    <section class="modal-content close-modal">
+    <section id="formularioModal" class="modal-content close-modal">
         <article class="form-content">
-            <button class="cerrar-btn">X</button>
-            <h2>Crear/Modificar</h2>
-            <form>
+            <button id="cerrar" class="cerrar-btn">X</button>
+            <h2 id="crear">Crear/Modificar</h2>
+            <form id="formActividad"name="formularioActividad">
                 <div class="input-content mg-16">
                     <label >Nombre de la actividad:</label>
-                    <input type="text" name="actividad">
+                    <input type="text" id="actividad" name="actividad">
                 </div>
                 <div class="mg-16">
                     <label>Nota: <br></label>
-                    <input type="number" name="nota">
+                    <input type="number" id="nota" name="nota">
                 </div>
                 <div class="button-content">
-                    <button type="button">Aceptar</button>
+                    <button id="botonAceptar" type="button">Aceptar</button>
                 </div>
             </form>
         </article>
     </section>
+    <script src="js/promedios.js"></script>
 </body>
 </html>
